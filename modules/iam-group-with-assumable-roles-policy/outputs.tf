@@ -22,3 +22,8 @@ output "group_arn" {
   description = "IAM group arn"
   value       = aws_iam_group.this.arn
 }
+
+output "group_path" {
+  description = "IAM group path"
+  value       = aws_iam_group.this.path
+}

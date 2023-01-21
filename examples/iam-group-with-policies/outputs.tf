@@ -17,3 +17,8 @@ output "group_name" {
   description = "IAM group name"
   value       = module.iam_group_superadmins.group_name
 }
+
+output "group_path" {
+  description = "IAM group path"
+  value       = module.iam_group_superadmins.group_path
+}

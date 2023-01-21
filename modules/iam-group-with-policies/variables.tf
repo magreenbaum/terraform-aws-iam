@@ -10,6 +10,12 @@ variable "name" {
   default     = ""
 }
 
+variable "path" {
+  description = "Path in which to create the group"
+  type        = string
+  default     = null
+}
+
 variable "group_users" {
   description = "List of IAM users to have in an IAM group which can assume the role"
   type        = list(string)

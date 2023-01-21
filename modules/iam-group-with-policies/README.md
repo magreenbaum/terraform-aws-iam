@@ -47,6 +47,7 @@ No modules.
 | <a name="input_group_users"></a> [group\_users](#input\_group\_users) | List of IAM users to have in an IAM group which can assume the role | `list(string)` | `[]` | no |
 | <a name="input_iam_self_management_policy_name_prefix"></a> [iam\_self\_management\_policy\_name\_prefix](#input\_iam\_self\_management\_policy\_name\_prefix) | Name prefix for IAM policy to create with IAM self-management permissions | `string` | `"IAMSelfManagement-"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of IAM group | `string` | `""` | no |
+| <a name="input_path"></a> [path](#input\_path) | Path in which to create the group | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all resources. | `map(string)` | `{}` | no |
 
 ## Outputs
@@ -56,5 +57,6 @@ No modules.
 | <a name="output_aws_account_id"></a> [aws\_account\_id](#output\_aws\_account\_id) | IAM AWS account id |
 | <a name="output_group_arn"></a> [group\_arn](#output\_group\_arn) | IAM group arn |
 | <a name="output_group_name"></a> [group\_name](#output\_group\_name) | IAM group name |
+| <a name="output_group_path"></a> [group\_path](#output\_group\_path) | IAM group path |
 | <a name="output_group_users"></a> [group\_users](#output\_group\_users) | List of IAM users in IAM group |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

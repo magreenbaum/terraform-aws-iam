@@ -16,6 +16,7 @@ resource "aws_iam_policy" "this" {
 
 resource "aws_iam_group" "this" {
   name = var.name
+  path = var.path
 }
 
 resource "aws_iam_group_policy_attachment" "this" {

@@ -17,3 +17,8 @@ output "group_name" {
   description = "IAM group name"
   value       = try(aws_iam_group.this[0].name, var.name)
 }
+
+output "group_path" {
+  description = "IAM group path"
+  value       = try(aws_iam_group.this[0].path, "")
+}

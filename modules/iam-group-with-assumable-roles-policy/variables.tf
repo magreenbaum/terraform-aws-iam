@@ -3,6 +3,12 @@ variable "name" {
   type        = string
 }
 
+variable "path" {
+  description = "Path in which to create the group"
+  type        = string
+  default     = null
+}
+
 variable "assumable_roles" {
   description = "List of IAM roles ARNs which can be assumed by the group"
   type        = list(string)

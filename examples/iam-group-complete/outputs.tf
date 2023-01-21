@@ -12,3 +12,8 @@ output "policy_arn" {
   description = "Assume role policy ARN for IAM group"
   value       = module.iam_group_complete.policy_arn
 }
+
+output "group_path" {
+  description = "IAM group path"
+  value       = module.iam_group_complete.group_path
+}

@@ -32,6 +32,8 @@ module "iam_group_superadmins" {
     module.iam_user2.iam_user_name,
   ]
 
+  path = "/admins/"
+
   custom_group_policy_arns = [
     "arn:aws:iam::aws:policy/AdministratorAccess",
   ]
