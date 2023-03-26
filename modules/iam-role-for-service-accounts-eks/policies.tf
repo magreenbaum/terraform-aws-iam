@@ -61,6 +61,8 @@ data "aws_iam_policy_document" "cluster_autoscaler" {
       "autoscaling:DescribeTags",
       "ec2:DescribeLaunchTemplateVersions",
       "ec2:DescribeInstanceTypes",
+      "ec2:DescribeImages",
+      "ec2:GetInstanceTypesFromInstanceRequirements",
       "eks:DescribeNodegroup",
     ]
 

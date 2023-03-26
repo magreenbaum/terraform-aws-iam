@@ -21,6 +21,7 @@ module "disabled" {
   source = "../../modules/iam-role-for-service-accounts-eks"
 
   create_role = false
+  role_name   = "disabled"
 }
 
 module "irsa_role" {
